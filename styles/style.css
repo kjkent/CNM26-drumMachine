@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/drums.jpg);
+    background-size: cover;
+    font-size: 1.5rem;
+}
+
+#box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 50%;
+    width: 60%;
+    border: solid 5px;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    box-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.drum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    cursor: pointer;
+}
+
+.drum:hover {
+    animation-name: buttonfade;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes buttonfade {
+    from {} to {
+        color:red;
+        background-color: black;
+    }
+}
+
+
+.drumtype {
+ font-weight: bold;
+}

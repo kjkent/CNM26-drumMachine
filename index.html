@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <title>Drum Machine</title>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <div id="clap" class="drum" data-key-eventcode="KeyA">
+                <div class="drumtype">CLAP</div>
+                <div class="key">A</div>
+            </div>
+            <div id="hihat" class="drum" data-key-eventcode="KeyS">
+                <div class="drumtype">HIHAT</div>
+                <div class="key">S</div>
+            </div>
+            <div id="kick" class="drum" data-key-eventcode="KeyD">
+                <div class="drumtype">KICK</div>
+                <div class="key">D</div>
+            </div>
+            <div id="openhat" class="drum" data-key-eventcode="KeyF">
+                <div class="drumtype">OPENHAT</div>
+                <div class="key">F</div>
+            </div>
+            <div id="boom" class="drum" data-key-eventcode="KeyG">
+                <div class="drumtype">BOOM</div>
+                <div class="key">G</div>
+            </div>
+            <div id="ride" class="drum" data-key-eventcode="KeyH">
+                <div class="drumtype">RIDE</div>
+                <div class="key">H</div>
+            </div>
+            <div id="snare" class="drum" data-key-eventcode="KeyJ">
+                <div id="snare"class="drumtype">SNARE</div>
+                <div class="key">J</div>
+            </div>
+            <div id="tom" class="drum" data-key-eventcode="KeyK">
+                <div class="drumtype">TOM</div>
+                <div class="key">K</div>
+            </div>
+            <div id="tink" class="drum" data-key-eventcode="KeyL">
+                <div class="drumtype">TINK</div>
+                <div class="key">L</div>
+            </div>
+            <div id="scream" class="drum" data-key-eventcode="Enter">
+                <div class="drumtype">SCREAM</div>
+                <div class="key">ENTER</div>
+            </div>    
+        </div>
+    </div>
+    <audio data-key-eventcode="KeyA" src="sounds/clap.wav"></audio>
+    <audio data-key-eventcode="KeyS" src="sounds/hihat.wav"></audio>
+    <audio data-key-eventcode="KeyD" src="sounds/kick.wav"></audio>
+    <audio data-key-eventcode="KeyF" src="sounds/openhat.wav"></audio>
+    <audio data-key-eventcode="KeyG" src="sounds/boom.wav"></audio>
+    <audio data-key-eventcode="KeyH" src="sounds/ride.wav"></audio>
+    <audio data-key-eventcode="KeyJ" src="sounds/snare.wav"></audio>
+    <audio data-key-eventcode="KeyK" src="sounds/tom.wav"></audio>
+    <audio data-key-eventcode="KeyL" src="sounds/tink.wav"></audio>
+    <audio data-key-eventcode="Enter" src="sounds/aarrgghh.wav"></audio>
+</body>
+</html>
